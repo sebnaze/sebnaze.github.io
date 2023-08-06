@@ -20,7 +20,7 @@ import harmonics from '../images/portfolio/harmonics.jpg';
 import concussion from '../images/portfolio/concussion.jpg';
 import neurofilament from '../images/portfolio/neurofilament.webp';
 import deeplearning from '../images/portfolio/deeplearning.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import featureseizure from '../images/portfolio/features_seizures.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
@@ -148,7 +148,7 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Machine Learning',
+        name: 'Statistical Learning',
         level: 8.5,
       },
       {
@@ -186,7 +186,7 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Fourier & Wavelets',
+        name: 'Bayesian Optimization',
         level: 8,
       },
       {
@@ -197,7 +197,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Spoken languages',
+    name: 'Languages',
     skills: [
       {
         name: 'French',
@@ -256,10 +256,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: deeplearning,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
+    title: 'Seizure classification',
+    description: 'Features importance in seizure classification using scalp EEG reduced to single timeseries',
+    url: 'https://www.medrxiv.org/content/medrxiv/early/2021/07/31/2021.07.28.21261310.full.pdf',
+    image: featureseizure,
   },
   {
     title: 'Project title 8',
