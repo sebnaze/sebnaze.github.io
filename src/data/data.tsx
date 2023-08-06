@@ -9,11 +9,11 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+/*import InstagramIcon from '../components/Icon/InstagramIcon';*/
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+/*import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/header-background.webp';*/
 import plosCB from '../images/portfolio/plosCB.png';
 import review from '../images/portfolio/review.jpg';
 import harmonics from '../images/portfolio/harmonics.jpg';
@@ -25,8 +25,12 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+/*import profilepic from '../images/profilepic.jpg';
+import testimonialImage from '../images/testimonial.webp';*/
+import montreal from '../images/montreal_wide_darker.jpg';
+import woodwave from '../images/woodwave_super.jpg';
+/*import zion from '../images/zion_fx_sq.jpeg';*/
+import profilepic from '../images/profile_adj.jpg';
 import {
   About,
   ContactSection,
@@ -44,8 +48,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Sebastien Naze Webpage',
-  description: "Site built with Tim Baker's react resume template",
+  title: 'Sebastien Naze',
+  description: "Personal webpage",
 };
 
 /**
@@ -68,17 +72,15 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
-  name: `Sebastien Naze`,
+  imageSrc: montreal,
+  name: `Sébastien Naze`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am a <strong className="text-stone-100">Computational Neuroscientist</strong>, currently working
-        at the Queensland Institute of Medical Research in the Department of <strong className="text-stone-100">Brain Modeling  
-        and Clinical Brain Networks</strong>.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my spare time, I ride <strong className="text-stone-100">bikes</strong> and walk <strong className="text-stone-100">slacklines</strong>.
+      <h2 className="prose-2xl text-stone-200 sm:prose-4xl lg:prose-6xl">
+        <strong className="text-stone-100">Computational Neuroscientist at the Queensland Institute of Medical Research</strong>
+      </h2>
+      <p className="prose-base text-stone-200 sm:prose-base lg:prose-lg">
+        Modeling brain-behavior associations in obsessive-compulsive disorder
       </p>
     </>
   ),
@@ -102,14 +104,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Senior Research Scientist in Computational Neuroscience. `,
+  description: `Computational neuroscience & machine learning specialist. I also ride bikes and walk slacklines.`,
   aboutItems: [
     {label: 'Location', text: 'Brisbane, Australia', Icon: MapIcon},
     {label: 'Age', text: '34', Icon: CalendarIcon},
     {label: 'Citizenship', text: 'French', Icon: FlagIcon},
-    {label: 'Interests', text: 'Brains, Minds & Computers', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Brain, Mind & Computers', Icon: SparklesIcon},
     {label: 'PhD', text: '2015', Icon: AcademicCapIcon},
-    {label: 'Employments', text: 'QIMR Berghofer', Icon: BuildingOffice2Icon},
+    {label: 'Employments', text: 'IBM, QIMR Berghofer', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -118,23 +120,44 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Computing',
     skills: [
       {
-        name: 'French',
-        level: 10,
-      },
-      {
-        name: 'English',
+        name: 'High Performance Clusters',
         level: 9,
       },
       {
-        name: 'Spanish',
-        level: 5,
+        name: 'Parallel & Distributed Computing',
+        level: 8.5,
       },
       {
-        name: 'Portuguese',
-        level: 3,
+        name: 'Databases',
+        level: 6.5,
+      },
+      {
+        name: 'Cloud',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Data Analysis',
+    skills: [
+      {
+        name: 'Graph Signal Processing',
+        level: 9,
+      },
+      {
+        name: 'Machine Learning',
+        level: 8.5,
+      },
+      {
+        name: 'Fourier & Wavelets',
+        level: 8,
+      },
+      {
+        name: 'Neuroimaging',
+        level: 7.5,
       },
     ],
   },
@@ -151,41 +174,42 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Java',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Computing Skills',
-    skills: [
-      {
-        name: 'Parallel and Distributed Computing',
-        level: 8,
-      },
-      {
-        name: 'Databases',
         level: 5,
       },
-      {
-        name: 'Cloud Engineering',
-        level: 3,
-      },
     ],
   },
   {
-    name: 'Data Analysis',
+    name: 'Modeling',
     skills: [
       {
-        name: 'Graph Signal Processing',
+        name: 'Dynamical systems',
         level: 9,
       },
       {
-        name: 'Machine Learning',
+        name: 'Fourier & Wavelets',
         level: 8,
       },
       {
-        name: 'Fourier/Wavelets transforms',
+        name: 'Symbolic mathematics',
         level: 7,
+      },
+      
+    ],
+  },
+  {
+    name: 'Spoken languages',
+    skills: [
+      {
+        name: 'French',
+        level: 10,
+      },
+      {
+        name: 'English',
+        level: 9,
+      },
+      {
+        name: 'Spanish',
+        level: 5,
       },
     ],
   },
@@ -271,17 +295,18 @@ export const education: TimelineItem[] = [
     date: '2015',
     location: 'Aix-Marseille Université, Provence, France',
     title: 'PhD in Computational Neursocience',
-    content: <p>Thesis entitled "Multiscale Modeling of Epileptic Seizure Dynamics" under the supervision of Dr Viktor Jirsa (theoritical physics)
-        and Dr Christophe Bernard (neurophysiology). 
-        Expertise acquired: dynamical systems theory, high performance computing, neuroscience.
-    </p>,
+    content: ( <>
+      <p>Thesis "Multiscale Modeling of Epileptic Seizure Dynamics" under the supervision 
+      of Viktor Jirsa (theoretical physics) and Christophe Bernard (neurophysiology). </p>
+      <p>Expertise: dynamical systems theory, high performance computing, neuroscience. </p>
+      </>)
   },
   {
     date: '2011',
     location: 'Vrije Universiteit, Amsterdam, The Netherlands',
     title: 'MSc in Information Science',
     content: <p>Master degree with specialization in data engineering, business intelligence and machine learning. 
-        Master thesis entitled "Agent modeling of post-traumatic stress disorders" under supervision of Professor Jan Treur.</p>,
+        Master thesis "Agent modeling of post-traumatic stress disorders" under supervision of Professor Jan Treur.</p>,
   },
   {
     date: '2009',
@@ -295,7 +320,7 @@ export const experience: TimelineItem[] = [
   {
     date: '2021 - Present',
     location: 'Queensland Institute of Medical Research, Brisbane, Australia',
-    title: 'Research Scientist',
+    title: 'Senior Researcher',
     content: (
       <p>Data engineering, analysis of multimodal dataset, and multiscale modeling of neurostimulation in obsessive-compulsive disorders.</p>
     ),
@@ -305,10 +330,11 @@ export const experience: TimelineItem[] = [
     location: 'IBM Research, Melbourne, Australia',
     title: 'Research Scientist',
     content: (
-      <p> Design and implementation of an interface between brain modeling and machine learning algorithms in Python and C++.
-        Parameter optimization using evolutionary algorithms. Integration of libraries into service architecture for cloud computing.
-        International team of 4-12 people operating from multiple countries.
-      </p>
+      <>
+        <p>- Design and implementation of an interface between brain modeling and machine learning algorithms in Python and C++.</p>
+        <p>- Parameter optimization using evolutionary algorithms. Integration of libraries into service architecture for cloud computing.</p>
+        <p>- International team of 4-12 people operating from multiple countries.</p>
+      </>
     ),
   },
   {
@@ -329,7 +355,7 @@ export const experience: TimelineItem[] = [
  * Testimonial section
  */
 export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
+  imageSrc: woodwave,
   testimonials: [
     {
       name: 'John Doe',
