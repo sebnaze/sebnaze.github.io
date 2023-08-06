@@ -22,9 +22,9 @@ import neurofilament from '../images/portfolio/neurofilament.webp';
 import deeplearning from '../images/portfolio/deeplearning.jpg';
 import featureseizure from '../images/portfolio/features_seizures.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import bica from '../images/portfolio/bica.png';
+import iconip from '../images/portfolio/iconip.png';
+import ibex from '../images/portfolio/ibex.png';
 /*import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';*/
 import montreal from '../images/montreal_wide_darker.jpg';
@@ -104,7 +104,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Computational neuroscience & machine learning specialist. I also ride bikes and walk slacklines.`,
+  description: `Computational neuroscience & machine learning specialist. Aside from working, I ride bicycles and walk slacklines.`,
   aboutItems: [
     {label: 'Location', text: 'Brisbane, Australia', Icon: MapIcon},
     {label: 'Age', text: '34', Icon: CalendarIcon},
@@ -262,28 +262,22 @@ export const portfolioItems: PortfolioItem[] = [
     image: featureseizure,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage8,
+    title: "Huntington's disease",
+    description: 'Cortico-striatal cross-frequency coupling and gamma genesis disruptions in Huntington’s disease mouse and computational models',
+    url: 'https://www.eneuro.org/content/5/6/ENEURO.0210-18.2018.abstract',
+    image: ibex,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
+    title: 'Hebbian Learning in PTSD',
+    description: 'A Computational Model for Development of Post-Traumatic Stress Disorders by Hebbian Learning',
+    url: 'https://link.springer.com/chapter/10.1007/978-3-642-34481-7_18',
+    image: iconip,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
+    title: 'Agent model of PTSD',
+    description: 'A computational agent model for post-traumatic stress disorders',
+    url: 'http://www.few.vu.nl/~wai/Papers/BICA11PTSD.pdf',
+    image: bica,
   },
 ];
 
@@ -294,7 +288,7 @@ export const education: TimelineItem[] = [
   {
     date: '2015',
     location: 'Aix-Marseille Université, Provence, France',
-    title: 'PhD in Computational Neursocience',
+    title: 'PhD in Computational Neuroscience',
     content: ( <>
       <p>Thesis "Multiscale Modeling of Epileptic Seizure Dynamics" under the supervision 
       of Viktor Jirsa (theoretical physics) and Christophe Bernard (neurophysiology). </p>
@@ -342,11 +336,12 @@ export const experience: TimelineItem[] = [
         location: 'IBM Research, New York, United States',
         title: 'Post-doctoral Researcher',
         content: (
-            <p> Delivered IBM Solutions in brain modeling to clients (CHDI, Pfizer) investigating Huntington’s disease phenotypes in-silico. 
-            Delivered quarterly reports with client presentations and ThinkLab demonstrations at client’s events. 
-            Developed software patches for IBM Neural Graph Simulator.
-            Served as IBM team co-lead on joint collaborative research projects with Stanford University Department of Medical Neuroscience and University Health Network, Toronto.
-            </p>
+          <>
+            <p>- Delivered IBM Solutions in brain modeling to clients (CHDI, Pfizer) investigating Huntington’s disease phenotypes in-silico. </p>
+            <p>- Delivered quarterly reports with client presentations and ThinkLab demonstrations at client’s events. </p>
+            <p>- Developed software patches for IBM Neural Graph Simulator.</p>
+            <p>- Served as IBM team co-lead on joint collaborative research projects with Stanford University Department of Medical Neuroscience and University Health Network, Toronto. </p>
+          </>
         ),
   },
 ];
