@@ -21,7 +21,7 @@ import concussion from '../images/portfolio/concussion.jpg';
 import neurofilament from '../images/portfolio/neurofilament.webp';
 import deeplearning from '../images/portfolio/deeplearning.jpg';
 import featureseizure from '../images/portfolio/features_seizures.png';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+/*import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';*/
 import bica from '../images/portfolio/bica.png';
 import iconip from '../images/portfolio/iconip.png';
 import ibex from '../images/portfolio/ibex.png';
@@ -352,7 +352,7 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: woodwave,
   testimonials: [
-    {
+    /*{
       name: 'John Doe',
       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
@@ -366,7 +366,7 @@ export const testimonial: TestimonialSection = {
       name: 'Someone else',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+    },*/
   ],
 };
 
@@ -376,7 +376,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Contact me by email or drop a message here.',
   items: [
     {
       type: ContactType.Email,
@@ -401,5 +401,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sebnaze'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/s%C3%A9bastien-naze-228b15211/'},
 ];
