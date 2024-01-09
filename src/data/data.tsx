@@ -86,7 +86,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/Resume_SNaze.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -327,7 +327,7 @@ export const experience: TimelineItem[] = [
       <>
         <p>- Design and implementation of an interface between brain modeling and machine learning algorithms in Python and C++.</p>
         <p>- Parameter optimization using evolutionary algorithms. Integration of libraries into service architecture for cloud computing.</p>
-        <p>- International team of 4-12 people operating from multiple countries.</p>
+        <p>- Coordinated work accross four labs operating from multiple countries.</p>
       </>
     ),
   },
@@ -340,7 +340,7 @@ export const experience: TimelineItem[] = [
             <p>- Delivered IBM Solutions in brain modeling to clients (CHDI, Pfizer) investigating Huntington’s disease phenotypes in-silico. </p>
             <p>- Delivered quarterly reports with client presentations and ThinkLab demonstrations at client’s events. </p>
             <p>- Developed software patches for IBM Neural Graph Simulator.</p>
-            <p>- Served as IBM team co-lead on joint collaborative research projects with Stanford University Department of Medical Neuroscience and University Health Network, Toronto. </p>
+            <p>- Co-lead IBM team on joint collaborative research projects with Stanford University Department of Medical Neuroscience and University Health Network, Toronto. </p>
           </>
         ),
   },
@@ -401,5 +401,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sebnaze'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/s%C3%A9bastien-naze-228b15211/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'http://www.linkedin.com/in/sébastien-naze-228b15211'},
 ];
