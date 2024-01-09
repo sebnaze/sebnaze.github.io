@@ -11,26 +11,26 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 /*import InstagramIcon from '../components/Icon/InstagramIcon';*/
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+/*import profilepic from '../images/profilepic.jpg';
+import testimonialImage from '../images/testimonial.webp';*/
+import montreal from '../images/montreal_wide_darker.jpg';
+/*import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';*/
+import bica from '../images/portfolio/bica.png';
+import concussion from '../images/portfolio/concussion.jpg';
+import deeplearning from '../images/portfolio/deeplearning.jpg';
+import featureseizure from '../images/portfolio/features_seizures.png';
+import harmonics from '../images/portfolio/harmonics.jpg';
+import ibex from '../images/portfolio/ibex.png';
+import iconip from '../images/portfolio/iconip.png';
+import neurofilament from '../images/portfolio/neurofilament.webp';
 /*import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';*/
 import plosCB from '../images/portfolio/plosCB.png';
 import review from '../images/portfolio/review.jpg';
-import harmonics from '../images/portfolio/harmonics.jpg';
-import concussion from '../images/portfolio/concussion.jpg';
-import neurofilament from '../images/portfolio/neurofilament.webp';
-import deeplearning from '../images/portfolio/deeplearning.jpg';
-import featureseizure from '../images/portfolio/features_seizures.png';
-/*import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';*/
-import bica from '../images/portfolio/bica.png';
-import iconip from '../images/portfolio/iconip.png';
-import ibex from '../images/portfolio/ibex.png';
-/*import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';*/
-import montreal from '../images/montreal_wide_darker.jpg';
-import woodwave from '../images/woodwave_super.jpg';
 /*import zion from '../images/zion_fx_sq.jpeg';*/
 import profilepic from '../images/profile_adj.jpg';
+import woodwave from '../images/woodwave_super.jpg';
 import {
   About,
   ContactSection,
@@ -197,7 +197,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Languages',
+    name: 'Natural Languages',
     skills: [
       {
         name: 'French',
