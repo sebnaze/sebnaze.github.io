@@ -1,5 +1,5 @@
 {
-  "name": "react-resume-template",
+  "name": "sebnaze",
   "version": "2.0.0",
   "homepage": "https://sebnaze.github.io",
   "private": true,
@@ -16,10 +16,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
-    "@heroicons/react": "^2.0.17",
+    "@heroicons/react": "^2.1.1",
     "autoprefixer": "^10.4.14",
     "classnames": "^2.3.2",
-    "next": "^13.4.1",
+    "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-pattern": "^4.2.2"
@@ -48,7 +48,7 @@
     "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.4.23",
     "postcss-preset-env": "^8.3.2",
     "prettier": "^2.8.8",
@@ -64,5 +64,16 @@
   },
   "resolutions": {
     "autoprefixer": "10.4.5"
+  },
+  "description": "![ReactJS Resume Website Template](resume-screenshot.jpg?raw=true 'ReactJS Resume Website Template')",
+  "main": "next-sitemap.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebnaze.github.com/sebnaze.github.io.git"
+  },
+  "author": "SebNaze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebnaze.github.com/sebnaze.github.io/issues"
   }
 }
