@@ -28,6 +28,8 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';*/
 import plosCB from '../images/portfolio/plosCB.png';
 import review from '../images/portfolio/review.jpg';
+import brain_thumbnail from '../images/portfolio/brain_thumbnail.png';
+import CT_thumbnail from '../images/portfolio/CT_thumbnail.jpg';
 /*import zion from '../images/zion_fx_sq.jpeg';*/
 import profilepic from '../images/profile_adj.jpg';
 import woodwave from '../images/woodwave_super.jpg';
@@ -104,14 +106,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Computational neuroscience & machine learning specialist. Aside from working, I ride bicycles and walk slacklines.`,
+  description: `Computational neuroscience & machine learning engineer. In my spare time, I ride bicycles and walk slacklines.`,
   aboutItems: [
-    {label: 'Location', text: 'Brisbane, Australia', Icon: MapIcon},
-    {label: 'Age', text: '34', Icon: CalendarIcon},
+    {label: 'Locations', text: 'Australia, United States, France', Icon: MapIcon},
+    {label: 'Age', text: '35', Icon: CalendarIcon},
     {label: 'Citizenship', text: 'French', Icon: FlagIcon},
-    {label: 'Interests', text: 'Brain, Mind & Computers', Icon: SparklesIcon},
-    {label: 'PhD', text: '2015', Icon: AcademicCapIcon},
-    {label: 'Employments', text: 'IBM, QIMR Berghofer', Icon: BuildingOffice2Icon},
+    {label: 'Professional interests', text: 'Neuroscience & AI', Icon: SparklesIcon},
+    {label: 'PhD', text: 'Aix-Marseille University, 2015', Icon: AcademicCapIcon},
+    {label: 'Employments', text: 'IBM Research, QIMR Berghofer', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -220,16 +222,16 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Seizure Dynamics',
-    description: 'Top-down computational modeling of seizure dynamics using coupled spiking and bursting neural network derived from the Epileptor model.',
-    url: 'https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004209',
-    image: plosCB,
+    title: 'TMS Clinical Trial',
+    description: 'Probing the effect of transcranial magnetic brain stimulation in obsessive-compulsive disorder.',
+    url: 'https://www.nature.com/articles/s44220-023-00094-0',
+    image: CT_thumbnail,
   },
   {
-    title: 'Review: Modern Concepts in Seizure Modeling',
-    description: 'Co-authored review on state-of-art seizure models.',
-    url: 'https://www.sciencedirect.com/science/article/abs/pii/B9780124186934000066?via%3Dihub',
-    image: review,
+    title: 'Fronto-striatal imbalance in OCD',
+    description: 'Neuroimaging and dynamic causal modeling in obsessive-compulsive disorder.',
+    url: 'https://academic.oup.com/brain/article-abstract/146/4/1322/6830574',
+    image: brain_thumbnail,
   },
   {
     title: 'Connectome Harmonics',
@@ -239,13 +241,13 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Connectome Eigenmodes: Concussion',
-    description: 'Applying the connectome eigenmodes framework to post-concussion/traumatic brain injury data from University Health Network, Toronto.',
+    description: 'Applying connectome eigenmodes to post-concussion/traumatic brain injury.',
     url: 'https://ieeexplore.ieee.org/abstract/document/9044786',
     image: concussion,
   },
   {
     title: 'Connectome Eigenmodes: Neurofilament',
-    description: 'Use connectome eigenmodes framework to predict a blood biomarker.',
+    description: 'Applying connectome eigenmodes to predict a blood biomarker.',
     url: 'https://www.nature.com/articles/s43856-021-00065-5',
     image: neurofilament,
   },
@@ -257,15 +259,27 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Seizure classification',
-    description: 'Features importance in seizure classification using scalp EEG reduced to single timeseries',
+    description: 'Features importance in seizure classification using scalp EEG reduced to single timeseries.',
     url: 'https://www.medrxiv.org/content/medrxiv/early/2021/07/31/2021.07.28.21261310.full.pdf',
     image: featureseizure,
   },
   {
     title: "Huntington's disease",
-    description: 'Cortico-striatal cross-frequency coupling and gamma genesis disruptions in Huntington’s disease mouse and computational models',
+    description: 'Cortico-striatal cross-frequency coupling and gamma genesis disruptions in Huntington’s disease.',
     url: 'https://www.eneuro.org/content/5/6/ENEURO.0210-18.2018.abstract',
     image: ibex,
+  },
+  {
+    title: 'Seizure Dynamics',
+    description: 'Top-down computational modeling of seizure dynamics using coupled spiking and bursting neural networks.',
+    url: 'https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004209',
+    image: plosCB,
+  },
+  {
+    title: 'Review: Modern Concepts in Seizure Modeling',
+    description: 'Co-authored review on state-of-art seizure models.',
+    url: 'https://www.sciencedirect.com/science/article/abs/pii/B9780124186934000066?via%3Dihub',
+    image: review,
   },
   {
     title: 'Hebbian Learning in PTSD',
