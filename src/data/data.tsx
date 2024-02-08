@@ -16,7 +16,9 @@ import testimonialImage from '../images/testimonial.webp';*/
 import montreal from '../images/montreal_wide_darker.jpg';
 /*import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';*/
 import bica from '../images/portfolio/bica.png';
+import brain_thumbnail from '../images/portfolio/brain_thumbnail.png';
 import concussion from '../images/portfolio/concussion.jpg';
+import CT_thumbnail from '../images/portfolio/CT_thumbnail.jpg';
 import deeplearning from '../images/portfolio/deeplearning.jpg';
 import featureseizure from '../images/portfolio/features_seizures.png';
 import harmonics from '../images/portfolio/harmonics.jpg';
@@ -28,8 +30,6 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';*/
 import plosCB from '../images/portfolio/plosCB.png';
 import review from '../images/portfolio/review.jpg';
-import brain_thumbnail from '../images/portfolio/brain_thumbnail.png';
-import CT_thumbnail from '../images/portfolio/CT_thumbnail.jpg';
 /*import zion from '../images/zion_fx_sq.jpeg';*/
 import profilepic from '../images/profile_adj.jpg';
 import woodwave from '../images/woodwave_super.jpg';

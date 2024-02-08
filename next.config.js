@@ -2,7 +2,7 @@
 
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
-  output: 'export',
+  output: 'export',   // /!\ this needs to be uncommented for portability to github pages!
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
@@ -30,6 +30,7 @@ const nextConfig = {
   trailingSlash: false,
   images: {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
+    unoptimized: true,
   },
 };
 
