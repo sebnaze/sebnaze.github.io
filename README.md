@@ -1,51 +1,31 @@
-# React JS Resume Website Template
+# Personal website -- Sebastien Naze
+### Forked from [there](https://github.com/tbakerx/react-resume-template).
 
-![ReactJS Resume Website Template](resume-screenshot.jpg?raw=true 'ReactJS Resume Website Template')
 
-<div align="center">
+## To update content
 
-<img alt="GitHub release (latest by date including pre-releases" src="https://img.shields.io/github/v/release/tbakerx/react-resume-template?include_prereleases">
+Most content is in `src/data/data.tsx`. After editing this file, committing and pushing changes, it might be necessary to clear cache and remove previous build from stack:
 
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/tbakerx/react-resume-template?style=flat">
+    npm cache clear --force
+    rm -rf node_modules
 
-<img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/tbakerx/react-resume-template?style=flat&color=success">
+Then run
 
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/tbakerx/react-resume-template?style=flat&color=yellow">
+    npm install gh-pages --save-dev
+    npm deploy run 
 
-<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/tbakerx/react-resume-template/react?style=flat">
 
-<img alt="Github Repo Sponsors" src="https://img.shields.io/github/sponsors/tbakerx?style=flat&color=blueviolet">
+## To test on local machine
 
-## React based template for software developer-focused resume websites
+You can build and test the website on a local machine if all dependencies are fullfilled. Note that things can be tricky with portability between local and github-pages deployment because of the potential different versions of the dependencies.  
 
-</div>
-
-### View a [live demo here.](https://reactresume.com)
-
-#### If this template has helped you and you'd like to support my work, feel free to [♥️ Sponsor](https://github.com/sponsors/tbakerx) the project
-
-### 🎉 Version 2 is here! New features:
-1. Completely rebuilt with React and full typescript support
-2. Built on the [Next.js](https://nextjs.org/) framework for easy server side rendering/static generation, image optimization, api routes, and deployment
-3. Styled entirely with [TailwindCss](https://tailwindcss.com/)
-4. Re-organized data population file for customizing site.
-5. Significant improvement/modernization of all site sections
- 
-**Looking for the old version? You can find it [here.](https://github.com/tbakerx/react-resume-template/releases/tag/v1.0.0)**
-
-## Description
-
-This is a React based personal resume website template. Built with typescript on the Next.js framework, styled with Tailwind css, and populated with data from a single file, you can easily create, customize and host your own personal website in minutes. Even better, the site is fully mobile-optimized and server-side rendered to ensure fast loading and a clean UI on any device. Read on to learn how to make it your own.
-
-## Make it Your Own!
-
-### 1. Make sure you have what you need
+### 1. Make sure you have node and yarn installed
 
 To build this website, you will need to have the latest stable versions of Node and Yarn downloaded and installed on your machine. If you don't already have them, you can get Node [here,](https://nodejs.org/en/download/) and Yarn [here.](https://yarnpkg.com/getting-started/install)
 
-### 2. Fork and download this repo (and star if you like!)
+Test and deployed locally with node v20.10.0 and yarn 1.22.19 (as of Jan 2024).
 
-Next, find the `Fork` button in the top right of this page. This will allow you to make your own copy, for more info on forking repo's see [here.](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) After this, download to your development machine using the green `Code` button at the top of the repo page.
+### 2. Pull, fork or clone this repo
 
 ### 3. Install dependencies and run
 
@@ -58,27 +38,36 @@ All of the data for the site is driven via a file at `/src/data/data.tsx`. This 
 ### 5. Hook up contact form
 Due to the variety of options available for contact form providers, I've hooked up the contact form only so far as handling inputs and state. Form submission and the actual sending of the email is open to your own implementation. My personal recommendation for email provider is [Sendgrid.](https://sendgrid.com/)
 
-### 6. Make any other changes you like
+## Troubleshooting
 
-Of course, all of the code is there and nothing is hidden from you so if you would like to make any other styling/data changes, feel free!
+### GIT repo permission denied after npm deploy run
+Make sure you ssh agent is up and using the correct key:
 
-### 7. Deploy to Vercel and enjoy your new Resume Website
+    eval "$(ssh-agent -s)"
+    ssh-add path/to/private_key
 
-Deploying your new site to Vercel is simple, and can be done by following their guide [here.](https://vercel.com/guides/deploying-nextjs-with-vercel) When you're all done and the build succeeds, you should be given a url for your live site, go there and you'll see your new personal resume website! Congratulations!
+### npm ERR! Cannot read properties of undefined (reading 'spec')
+You may need to clear cache and delete previous builds:
 
-## Project Created & Maintained By
+    npm cache clear --force
+    rm -rf node_modules
 
-### Tim Baker
+### npm ERR! Cannot read properties of undefined (reading 'export')
+This has occured when running on local machine, may need to comment the following line in `next.config.js`:
 
-<a href="https://twitter.com/timbakerx"><img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60"></a><a href="https://instagram.com/tbakerx"><img src="https://github.com/aritraroy/social-icons/blob/master/instagram-icon.png?raw=true" width="60"></a>
+    output: 'export', 
 
-[![GitHub followers](https://img.shields.io/github/followers/tbakerx.svg?style=social&label=Follow)](https://github.com/tbakerx/)
+Likewise, if image optimization is not supported, comment
 
-## Stargazers
+    unoptimized: true,
 
-[![Stargazers repo roster for @tbakerx/react-resume-template](https://reporoster.com/stars/dark/tbakerx/react-resume-template)](https://github.com/tbakerx/react-resume-template/stargazers)
+### ESLINT error
+Some links are broken in the build, run
+    
+    npx eslint . --fix
 
-## Forkers
-
-[![Forkers repo roster for @tbakerx/react-resume-template](https://reporoster.com/forks/dark/tbakerx/react-resume-template)](https://github.com/tbakerx/react-resume-template/network/members)
-
+### npm ERR! Cannot read properties of undefined (...)
+Check dependencies' versions in `package.json`. 
+Some edits, upgrades or downgrades were done compared to template to have it deployed:
+"next": ^13.4.1 --> ^14.0.4
+"gh-pages": ^6.1.1 --> ^3.2.3
