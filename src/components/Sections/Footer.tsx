@@ -17,7 +17,7 @@ const Footer: FC = memo(() => (
       <div className="flex gap-x-4 text-neutral-400">
         <Socials />
       </div>
-      <span className="text-sm text-neutral-400">© Copyright 2022-2023 Tim Baker & Sebastien Naze</span>
+      <span className="text-sm text-neutral-400">© Copyright 2022-2026 Tim Baker & Sebastien Naze</span>
     </div>
   </div>
 ));

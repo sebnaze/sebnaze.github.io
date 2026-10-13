@@ -1,5 +1,5 @@
 import {StaticImageData} from 'next/image';
-import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
+import {FC, ForwardRefExoticComponent, ReactNode, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
 
@@ -39,7 +39,7 @@ interface HeroActionItem {
  */
 export interface About {
   profileImageSrc?: string;
-  description: string;
+  description: ReactNode /*string;*/;
   aboutItems: AboutItem[];
 }
 
@@ -81,6 +81,7 @@ export interface PortfolioItem {
   description: string;
   url: string;
   image: string | StaticImageData;
+  year?: number;
 }
 
 /**
@@ -102,7 +103,7 @@ export interface TestimonialSection {
 }
 
 export interface Testimonial {
-  image?: string;
+  image?: string | StaticImageData;
   name: string;
   text: string;
 }
@@ -127,7 +128,7 @@ export const ContactType = {
   Instagram: 'Instagram',
 } as const;
 
-export type ContactType = typeof ContactType[keyof typeof ContactType];
+export type ContactType = (typeof ContactType)[keyof typeof ContactType];
 
 export interface ContactItem {
   type: ContactType;
