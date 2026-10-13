@@ -41,7 +41,7 @@ import profilepic from '../images/Profile_Lyon.jpg';
 import woodwave from '../images/woodwave_super.jpg';
 /*import luca_pic from '../images/colleagues/luca_cocchi_qimr_small.jpg';*/
 import john_doe from '../images/colleagues/john_doe.jpg';
-import jane_doe from '../images/colleagues/jane_doe.jpg';
+import lilly from '../images/colleagues/lilly.jpg';
 import {
   About,
   ContactSection,
@@ -466,14 +466,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: woodwave,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: john_doe,
+      name: 'Lilly',
+      text: 'My papa makes the best smoothies!',
+      image: lilly,
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: jane_doe,
+      name: 'John Doe',
+      text: 'Sebastien makes great pancakes too',
+      image: john_doe,
     },
   ],
 };

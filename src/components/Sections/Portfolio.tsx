@@ -10,10 +10,7 @@ import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
 
 const Portfolio: FC = memo(() => {
-  const sortedPortfolioItems = useMemo(
-    () => [...portfolioItems].sort((a, b) => (b.year ?? 0) - (a.year ?? 0)),
-    [],
-  );
+  const sortedPortfolioItems = useMemo(() => [...portfolioItems].sort((a, b) => (b.year ?? 0) - (a.year ?? 0)), []);
 
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
@@ -34,7 +31,7 @@ const Portfolio: FC = memo(() => {
         </div>
 
         {/* Tablet: 3 columns */}
-        <div className="hidden w-full md:grid lg:hidden md:grid-cols-3 md:gap-4">
+        <div className="hidden w-full md:grid md:grid-cols-3 md:gap-4 lg:hidden">
           {[0, 1, 2].map(colIdx => (
             <div className="flex flex-col gap-y-4" key={`col-3-${colIdx}`}>
               {sortedPortfolioItems
@@ -70,9 +67,7 @@ const PortfolioCard: FC<{item: PortfolioItem}> = memo(({item}) => {
   const {title, image} = item;
   return (
     <div
-      className={classNames(
-        'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-      )}>
+      className={classNames('relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl')}>
       <Image alt={title} className="h-auto w-full" placeholder="blur" src={image} />
       <ItemOverlay item={item} />
     </div>
