@@ -89,7 +89,7 @@ export const heroData: Hero = {
   description: (
     <>
       <h2 className="sm:prose-4xl lg:prose-6xl prose-2xl text-stone-200">
-        <strong className="flex flex-wrap items-center justify-center gap-x-2 sm:gap-x-4 text-stone-100">
+        <strong className="flex flex-wrap items-center justify-center gap-x-2 text-stone-100 sm:gap-x-4">
           <span>Computational Neuroscientist</span>
           <span className="hidden sm:inline">&</span>
           <span>AI Engineer</span>
@@ -124,10 +124,15 @@ export const aboutData: About = {
   description: (
     <>
       <p>
-        I spent the past 15 years reverse-engineering neural circuits underlying psychiatric and neurological disorders, from epilepsy to Huntington's disease to OCD, to help restore healthy cognitive function. I apply abstract theoretical frameworks to address real-world problems through data analysis, computational modeling, parameter inference and predictive evaluations. My work directly contributed to novel clinical interventions, such as a trial testing ultrasonic brain stimulation, and shaped new experimental hypotheses.
+        I spent the past 15 years reverse-engineering neural circuits underlying psychiatric and neurological disorders,
+        from epilepsy to Huntington's disease to OCD, to help restore healthy cognitive function. I apply abstract
+        theoretical frameworks to address real-world problems through data analysis, computational modeling, parameter
+        inference and predictive evaluations. My work directly contributed to novel clinical interventions, such as a
+        trial testing ultrasonic brain stimulation, and shaped new experimental hypotheses.
       </p>
       <p>
-        Recently, I have been training AI models to solve complex neuroscientific tasks, dissecting their internal representations to uncover the mechanisms underlying their outputs, and interpreting their reasoning.
+        Recently, I have been training AI models to solve complex neuroscientific tasks, dissecting their internal
+        representations to uncover the mechanisms underlying their outputs, and interpreting their reasoning.
       </p>
       <p>In my spare time, I enjoy riding bicycles and walking on long or high slacklines.</p>
     </>
@@ -319,7 +324,8 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Functional dynamics of CSTC systems in learning',
     year: 2020,
-    description: 'Modeling of cortico-striato-thalamo-cortical (CSTC) dynamics in a learning task: preliminary results.',
+    description:
+      'Modeling of cortico-striato-thalamo-cortical (CSTC) dynamics in a learning task: preliminary results.',
     url: 'https://www.biorxiv.org/content/10.1101/2020.07.20.211425v1',
     image: ibex,
   },
@@ -379,7 +385,8 @@ export const education: TimelineItem[] = [
     content: (
       <>
         <p>
-          Thesis "Multiscale Modeling of Epileptic Seizure Dynamics" under the supervision of Viktor Jirsa (theoretical physics) and Christophe Bernard (neurophysiology).
+          Thesis "Multiscale Modeling of Epileptic Seizure Dynamics" under the supervision of Viktor Jirsa (theoretical
+          physics) and Christophe Bernard (neurophysiology).
         </p>
         <p>Expertise: dynamical systems theory, high performance computing, neuroscience. </p>
       </>
@@ -391,9 +398,7 @@ export const education: TimelineItem[] = [
     title: 'MSc in Information Science',
     content: (
       <>
-        <p>
-          Master degree with specialization in data engineering, business intelligence and machine learning. 
-        </p>
+        <p>Master degree with specialization in data engineering, business intelligence and machine learning.</p>
         <p>
           Master thesis "Agent modeling of post-traumatic stress disorders" under supervision of Professor Jan Treur.
         </p>
@@ -416,7 +421,8 @@ export const experience: TimelineItem[] = [
     content: (
       <>
         <p>
-          Data engineering, analysis of multimodal dataset, multiscale modeling, and funding acquisition for neurostimulation in obsessive-compulsive disorders.
+          Data engineering, analysis of multimodal dataset, multiscale modeling, and funding acquisition for
+          neurostimulation in obsessive-compulsive disorders.
         </p>
         <p>Development of Neuro-AI pipeline for clinical prediction and mechanistic interpretability.</p>
       </>
@@ -429,10 +435,12 @@ export const experience: TimelineItem[] = [
     content: (
       <>
         <p>
-          Design and implementation of an interface between brain modeling and machine learning algorithms in Python and C++.
+          Design and implementation of an interface between brain modeling and machine learning algorithms in Python and
+          C++.
         </p>
         <p>
-          Parameter optimization using evolutionary algorithms. Integration of libraries into service architecture for cloud computing.
+          Parameter optimization using evolutionary algorithms. Integration of libraries into service architecture for
+          cloud computing.
         </p>
         <p>Coordinated work accross four labs operating from multiple countries.</p>
       </>
@@ -466,8 +474,8 @@ export const testimonial: TestimonialSection = {
   imageSrc: woodwave,
   testimonials: [
     {
-      name: 'Lilly',
-      text: 'My papa makes the best smoothies!',
+      name: 'Lilly, 1st grade',
+      text: 'My daddy makes the best smoothies!',
       image: lilly,
     },
     {
