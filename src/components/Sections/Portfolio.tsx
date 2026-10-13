@@ -15,7 +15,7 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
+        <h2 className="self-center text-xl font-bold text-white">Selected Projects</h2>
 
         {/* Mobile: 2 columns */}
         <div className="grid w-full grid-cols-2 gap-4 md:hidden">
