@@ -12,6 +12,9 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
 /*import InstagramIcon from '../components/Icon/InstagramIcon';*/
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+/*import luca_pic from '../images/colleagues/luca_cocchi_qimr_small.jpg';*/
+import john_doe from '../images/colleagues/john_doe.jpg';
+import lilly from '../images/colleagues/lilly.jpg';
 /*import OrcidIcon from '../components/Icon/OrcidIcon';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';*/
@@ -19,29 +22,26 @@ import montreal from '../images/montreal_wide_darker.jpg';
 /*import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';*/
 import bica from '../images/portfolio/bica.png';
 import brain_thumbnail from '../images/portfolio/brain_thumbnail.png';
-import ocd_modeling from '../images/portfolio/ctsc_ocd_simplified.jpg';
 import concussion from '../images/portfolio/concussion.jpg';
-import tms_ocd from '../images/portfolio/tms_frontal.jpg';
+import cross_freq from '../images/portfolio/cross_freq_coupling.png';
+import ocd_modeling from '../images/portfolio/ctsc_ocd_simplified.jpg';
 import deeplearning from '../images/portfolio/deeplearning.jpg';
 /*import featureseizure from '../images/portfolio/features_seizures.png';*/
 import feature_importance from '../images/portfolio/feature_importance.jpg';
 import harmonics from '../images/portfolio/harmonics_only.jpg';
 import ibex from '../images/portfolio/ibex.png';
-import cross_freq from '../images/portfolio/cross_freq_coupling.png';
-import iconip from '../images/portfolio/ptsd_hebbian.jpg';
 import neurofilament from '../images/portfolio/neurofilament.webp';
+import iconip from '../images/portfolio/ptsd_hebbian.jpg';
+import review from '../images/portfolio/review_seizure_modeling.jpg';
 /*import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import plosCB from '../images/portfolio/plosCB.png';*/
 import seizure_params from '../images/portfolio/seizure_parameter_space.jpg';
-import review from '../images/portfolio/review_seizure_modeling.jpg';
+import tms_ocd from '../images/portfolio/tms_frontal.jpg';
 /*import zion from '../images/zion_fx_sq.jpeg';*/
 import profilepic from '../images/Profile_Lyon.jpg';
 import woodwave from '../images/woodwave_super.jpg';
-/*import luca_pic from '../images/colleagues/luca_cocchi_qimr_small.jpg';*/
-import john_doe from '../images/colleagues/john_doe.jpg';
-import lilly from '../images/colleagues/lilly.jpg';
 import {
   About,
   ContactSection,
