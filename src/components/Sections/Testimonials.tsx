@@ -114,14 +114,14 @@ const Testimonials: FC = memo(() => {
 });
 
 const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
-  ({testimonial: {text, name, image}, isActive}) => (
+  ({testimonial: {text, name, title, image}, isActive}) => (
     <div
       className={classNames(
         'flex w-full shrink-0 snap-start snap-always flex-col items-start gap-y-4 p-2 transition-opacity duration-1000 sm:flex-row sm:gap-x-6',
         isActive ? 'opacity-100' : 'opacity-0',
       )}>
       {image ? (
-        <div className="relative h-14 w-14 shrink-0 sm:h-16 sm:w-16">
+        <div className="relative h-24 w-24 shrink-0 sm:h-24 sm:w-24 md:h-32 md:w-32">
           <QuoteIcon className="absolute -left-2 -top-2 h-4 w-4 stroke-black text-white" />
           <img
             className="h-full w-full rounded-full object-cover object-center"
@@ -131,9 +131,10 @@ const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
       ) : (
         <QuoteIcon className="h-5 w-5 shrink-0 text-white sm:h-8 sm:w-8" />
       )}
-      <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col gap-y-0">
         <p className="prose prose-sm font-medium italic text-white sm:prose-base">{text}</p>
-        <p className="text-xs italic text-white sm:text-sm md:text-base lg:text-lg">-- {name}</p>
+        <p className="mt-4 text-xs text-white sm:text-sm md:text-base lg:text-lg">{name}</p>
+        <p className="text-xs text-white sm:text-sm">{title}</p>
       </div>
     </div>
   ),

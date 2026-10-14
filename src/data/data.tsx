@@ -12,10 +12,10 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
 /*import InstagramIcon from '../components/Icon/InstagramIcon';*/
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-/*import luca_pic from '../images/colleagues/luca_cocchi_qimr_small.jpg';*/
-import john_doe from '../images/colleagues/john_doe.jpg';
-import lilly from '../images/colleagues/lilly.jpg';
-/*import OrcidIcon from '../components/Icon/OrcidIcon';
+import anais from '../images/colleagues/anais_small.jpg';
+import luca from '../images/colleagues/luca_cocchi_qimr_small.jpg';
+/*import lilly from '../images/colleagues/lilly.jpg';
+import OrcidIcon from '../components/Icon/OrcidIcon';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';*/
 import montreal from '../images/montreal_wide_darker.jpg';
@@ -40,7 +40,7 @@ import plosCB from '../images/portfolio/plosCB.png';*/
 import seizure_params from '../images/portfolio/seizure_parameter_space.jpg';
 import tms_ocd from '../images/portfolio/tms_frontal.jpg';
 /*import zion from '../images/zion_fx_sq.jpeg';*/
-import profilepic from '../images/Profile_Lyon.jpg';
+import profilepic from '../images/Profile_Lyon_sm.jpg';
 import woodwave from '../images/woodwave_super.jpg';
 import {
   About,
@@ -139,7 +139,7 @@ export const aboutData: About = {
   ),
   aboutItems: [
     {label: 'Locations', text: 'United States, Australia, France', Icon: MapIcon},
-    {label: 'Legal status', text: 'French citizen, U.S. Green card holder', Icon: FlagIcon},
+    {label: 'Citizenship', text: 'France (Citizen), USA (Green card)', Icon: FlagIcon},
     /* {label: 'Professional interests', text: 'Neuroscience & AI', Icon: SparklesIcon}, */
     {label: 'Employment', text: 'QIMR Berghofer. Past: IBM Research', Icon: BuildingOffice2Icon},
     {label: 'PhD', text: 'Aix-Marseille University, 2015', Icon: AcademicCapIcon},
@@ -474,14 +474,16 @@ export const testimonial: TestimonialSection = {
   imageSrc: woodwave,
   testimonials: [
     {
-      name: 'Lilly, 1st grade',
-      text: 'My daddy makes the best smoothies!',
-      image: lilly,
+      name: 'Luca Cocchi',
+      title: 'Professor, QIMR Berghofer',
+      text: "Sebastien contributed broadly to our clinical program. His commitment to open science and data quality has shaped our lab's practice.",
+      image: luca,
     },
     {
-      name: 'John Doe',
-      text: 'Sebastien makes great pancakes too',
-      image: john_doe,
+      name: 'Anaïs Llorens',
+      title: 'Group Leader, Sainte-Anne Hospital',
+      text: "I've known Seb for 15+ years. He's a great colleague: brilliant, witty, and full of positive energy.",
+      image: anais,
     },
   ],
 };
