@@ -23,7 +23,7 @@ You can build and test the website on a local machine if all dependencies are fu
 
 To build this website, you will need to have the latest stable versions of Node and Yarn downloaded and installed on your machine. If you don't already have them, you can get Node [here,](https://nodejs.org/en/download/) and Yarn [here.](https://yarnpkg.com/getting-started/install)
 
-Test and deployed locally with node v20.10.0 and yarn 1.22.19 (as of Jan 2024).
+Test and deployed locally with node v24.21.0 and yarn 1.22.22 (as of Oct 2026).
 
 ### 2. Pull, fork or clone this repo
 
@@ -62,12 +62,12 @@ Likewise, if image optimization is not supported, comment
     unoptimized: true,
 
 ### ESLINT error
-Some links are broken in the build, run
+Some links are broken in the build, or there is an error about imports orders:
     
     npx eslint . --fix
 
-### npm ERR! Cannot read properties of undefined (...)
-Check dependencies' versions in `package.json`. 
-Some edits, upgrades or downgrades were done compared to template to have it deployed:
-"next": ^13.4.1 --> ^14.0.4
-"gh-pages": ^6.1.1 --> ^3.2.3
+Or 
+
+    yarn eslint . --fix
+
+

@@ -13,6 +13,7 @@ import GoogleScholarIcon from '../components/Icon/GoogleScholarIcon';
 /*import InstagramIcon from '../components/Icon/InstagramIcon';*/
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import anais from '../images/colleagues/anais_small.jpg';
+import kozloski from '../images/colleagues/kozloski.jpg';
 import luca from '../images/colleagues/luca_cocchi_qimr_small.jpg';
 /*import lilly from '../images/colleagues/lilly.jpg';
 import OrcidIcon from '../components/Icon/OrcidIcon';
@@ -484,6 +485,12 @@ export const testimonial: TestimonialSection = {
       title: 'Group Leader, Sainte-Anne Hospital',
       text: "I've known Seb for 15+ years. He's a great colleague: brilliant, witty, and full of positive energy.",
       image: anais,
+    },
+    {
+      name: 'James Kozloski',
+      title: 'Former Manager, IBM Research',
+      text: "Sebastien launched two new research programs on his own initiative while on my IBM team. A rigorous, original standout, and a pleasure to work with.",
+      image: kozloski,
     },
   ],
 };
