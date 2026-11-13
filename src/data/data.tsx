@@ -20,6 +20,7 @@ import OrcidIcon from '../components/Icon/OrcidIcon';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';*/
 import montreal from '../images/montreal_wide_darker.jpg';
+import arena from '../images/portfolio/arena_mini.jpg';
 import bica from '../images/portfolio/bica.png';
 import brain_thumbnail from '../images/portfolio/brain_thumbnail.png';
 import concussion from '../images/portfolio/concussion.jpg';
@@ -274,6 +275,12 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'ARENA bootcamp',
+    year: 2026,
+    description: "Alignement Research Research Accelerator",
+    url: 'https://github.com/sebnaze/ARENA',
+    image: arena,
+  },{
     title: 'Simplex Takehome',
     year: 2026,
     description: "Analyzing Transformer's internal representations through computational mechanics.",
