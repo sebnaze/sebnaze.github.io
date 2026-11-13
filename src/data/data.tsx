@@ -20,7 +20,7 @@ import OrcidIcon from '../components/Icon/OrcidIcon';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';*/
 import montreal from '../images/montreal_wide_darker.jpg';
-/*import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';*/
+import simplex from '../images/portfolio/simplex.jpg';
 import bica from '../images/portfolio/bica.png';
 import brain_thumbnail from '../images/portfolio/brain_thumbnail.png';
 import concussion from '../images/portfolio/concussion.jpg';
@@ -273,6 +273,13 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'Simplex Takehome',
+    year: 2026,
+    description: "Analyzing Transformer's internal representations through computational mechanics.",
+    url: 'https://github.com/sebnaze/Simplex_Takehome/',
+    image: simplex,
+  },
   {
     title: 'OCD Modeling',
     year: 2025,
