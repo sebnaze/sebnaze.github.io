@@ -20,7 +20,6 @@ import OrcidIcon from '../components/Icon/OrcidIcon';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';*/
 import montreal from '../images/montreal_wide_darker.jpg';
-import simplex from '../images/portfolio/simplex.jpg';
 import bica from '../images/portfolio/bica.png';
 import brain_thumbnail from '../images/portfolio/brain_thumbnail.png';
 import concussion from '../images/portfolio/concussion.jpg';
@@ -39,6 +38,7 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import plosCB from '../images/portfolio/plosCB.png';*/
 import seizure_params from '../images/portfolio/seizure_parameter_space.jpg';
+import simplex from '../images/portfolio/simplex.jpg';
 import tms_ocd from '../images/portfolio/tms_frontal.jpg';
 /*import zion from '../images/zion_fx_sq.jpeg';*/
 import profilepic from '../images/Profile_Lyon_sm.jpg';
